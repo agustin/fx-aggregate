@@ -1,0 +1,10 @@
+Description:
+  Create a new database aggregate for your application. This will create a new aggregate definition file and the accompanying migration.
+
+  When --no-migration is passed, skips generating a migration.
+
+Examples:
+    rails generate fx:aggregate test
+
+      create: db/aggregates/test_v01.sql
+      create: db/migrate/[TIMESTAMP]_create_test_aggregate.rb
