@@ -5,14 +5,6 @@ require "standard/rake"
 namespace :dummy do
   require_relative "spec/dummy/config/application"
   Dummy::Application.load_tasks
-
-  task :console do
-    require "pry"
-    require "fx-aggregate"
-
-    ARGV.clear
-    Pry.start
-  end
 end
 
 task(:spec).clear
